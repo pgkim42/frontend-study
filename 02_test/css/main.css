@@ -1,0 +1,21 @@
+div {
+  color: red;
+  font-size: 100px;
+}
+
+a {
+  color: inherit; /* 부모 요소의 색상을 상속받음 */
+  text-decoration: underline; /* 기본적으로 밑줄 표시 */
+}
+
+.logo {
+  width: 500px;
+  height: 500px;
+  background-image: url("../images/logo.png");
+}
+
+.about {
+  color: red;
+  font-size: 100px;
+  background: green;
+}
