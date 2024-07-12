@@ -1,0 +1,51 @@
+.profile {
+  /* 이미지 가운데 정렬하는 1번 방법 */
+  text-align: center; 
+}
+
+.profile > img {
+  /* img는 인라인 요소지만 가로/세로 길이 지정 가능 */
+  width: 200px;  
+  height: 200px;
+  border-radius: 50%;
+  /* 이미지 가운데 정렬하기 */
+  /* 1) 부모에 text-align 사용하기 */
+  /* 2) 가로 길이를 갖는 블록 요소에 margin: 0 auto; 주기 */
+  /* display: block;
+  margin: 0 auto; */
+}
+
+
+.title {
+  width: 500px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  font-size: 50px;
+}
+.content {
+   width: 500px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.content > .red {
+  color: red;
+  font-weight: 700;
+}
+
+.box {
+  width: 500px;
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  margin: 0 auto;
+  padding: 20px 0;
+  
+  box-shadow: 5px 5px 5px 5px black;
+}
