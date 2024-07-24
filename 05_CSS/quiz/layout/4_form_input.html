@@ -13,11 +13,12 @@
         border: 2px solid #ccc;
         border-radius: 6px;
         outline: none;
-        transition: 0.5s;
+        transition: 0.75s;
       }
 
       .text-input:focus {
-        border: 2px solid red;
+        /* border: 2px solid red; */
+        border-color: #aaa;
       }
 
       div,
@@ -26,6 +27,7 @@
         box-sizing: border-box;
       }
       textarea {
+        height: 100px;
         resize: none;
       }
       button {
@@ -43,6 +45,7 @@
         max-width: 600px;
         display: flex;
         flex-direction: column;
+        padding: 30px;
       }
       form {
         max-width: 800px;
@@ -68,6 +71,7 @@
         padding: 8px;
         border: 1px solid #ccc;
         border-radius: 4px;
+        
       }
 
       .name-container {
@@ -80,28 +84,24 @@
         margin-right: 10px;
       }
 
-      .name-container div:last-child {
+      .name-container .lastname {
         margin-right: 0;
       }
 
-      textarea {
-        height: 100px;
-        resize: vertical;
-      }
+      
 
       .agree-send-container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        
       }
 
       button {
-        background-color: #d9534f;
-        color: white;
-        padding: 10px 15px;
+        background-color: lightsalmon;
+        color: white;        
         border: none;
         border-radius: 4px;
-        cursor: pointer;
+        transition: 0.5s;
       }
 
       button:hover {
@@ -142,16 +142,27 @@
               id="email"
               name="email"
               placeholder="email@example.com"
+              class="text-input"
             />
           </div>
           <div class="name-container">
             <div>
               <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name" />
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="text-input"
+              />
             </div>
-            <div>
+            <div class="lastname">
               <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="last-name" />
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="text-input"
+              />
             </div>
           </div>
           <div>
@@ -162,6 +173,7 @@
             <div>
               <input type="checkbox" id="agree" name="agree" />
               <label for="agree">Agree</label>
+              
             </div>
             <button type="submit">Send</button>
           </div>
