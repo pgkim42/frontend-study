@@ -53,8 +53,8 @@
         <!-- 메뉴 -->
         <nav class="font-en">
           <ul>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skill">SKILL</a></li>
+            <a href="#about"><li>ABOUT</li></a>
+            <a href="#skill"><li>SKILL</li></a>
             <li><a href="#work">WORK</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
@@ -72,26 +72,180 @@
 
     <!-- ABOUT -->
     <section id="about" class="about">
-      <div class="inner"></div>
-      <h2 class="title font-en">ABOUT</h2>
-      <div class="about__wrapper">
-        <div class="about__img">
-          <!-- 본인 프로필 이미지로 변경 -->
-          <img src="images/profile.jpg" alt="프로필" />
+      <div class="inner">
+        <h2 class="title font-en">ABOUT</h2>
+        <div class="about__wrapper">
+          <div class="about__img">
+            <!-- 본인 프로필 이미지로 변경 -->
+            <img src="images/profile.jpg" alt="프로필" />
+          </div>
+          <div class="about__text">
+            <!-- 본인 슬로건, 이름, 등등 작성 -->
+            <strong class="slogan font-en">hello</strong>
+            <h3 class="font-en">name</h3>
+            <div>
+              <h4 class="font-en">EDUCATION</h4>
+              <ul>
+                <li>99.99 ~ 99.99 AAAAA</li>
+                <li>00.00 ~ 00.00 BBBBB</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="about__text">
-          <!-- 본인 슬로건, 이름, 등등 작성 -->
-          <strong class="slogan font-en">hello</strong>
-          <h3 class="font-en">name</h3>
-          <div>
-            <h4 class="font-en">EDUCATION</h4>
+
+        <!-- 연락처 버튼 -->
+        <div class="about__btn font-en">
+          <a href="#contact">
+            <img src="images/icon/icon_contact.png" alw="전화" />CONTACT
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILL -->
+    <section id="skill" class="skill scroll-spy">
+      <div class="inner">
+        <h2 class="title font-en">SKILL</h2>
+        <ul class="skill__list">
+          <!-- 스킬 추가하려면 li 요소 복사 붙여넣기 -->
+          <li>
+            <div class="font-en">
+              <p>Java</p>
+            </div>
+            <h3 class="font-en">Java<br />Programming</h3>
             <ul>
-              <li>99.99 ~ 99.99 AAAAA</li>
-              <li>00.00 ~ 00.00 BBBBB</li>
+              <li>객체지향</li>
+              <li>람다식</li>
+              <li>파일 입출력</li>
+              <li>JDBC</li>
             </ul>
+          </li>
+
+          <li>
+            <div class="font-en">
+              <p>Html</p>
+            </div>
+            <h3 class="font-en">HTML5</h3>
+            <ul>
+              <li>웹페이지 구조 설계</li>
+              <li>파일 입출력</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="font-en">
+              <p>Css</p>
+            </div>
+            <h3 class="font-en">CSS3</h3>
+            <ul>
+              <li>객체지향</li>
+              <li>람다식</li>
+              <li>파일 입출력</li>
+              <li>JDBC</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="font-en">
+              <p>Spring</p>
+            </div>
+            <h3 class="font-en">Spring Framework</h3>
+            <ul>
+              <li>Spring Framework</li>
+              <li>SpringBoot</li>
+              <li>Spring Security</li>
+            </ul>
+          </li>
+
+          <li>
+            <div class="font-en">
+              <p>Js</p>
+            </div>
+            <h3 class="font-en">JavaScript</h3>
+            <ul>
+              <li>DOM 조작, 제어</li>
+              <li>이벤트 처리</li>
+              <li>비동기 통신</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="work font-en">
+      <div class="inner">
+        <h2 class="title">WORK</h2>
+        <div class="port">
+          <div class="port__img">
+            <img src="images/work_1.jpg" alt="포트폴리오1" />
+          </div>
+          <div class="port__text">
+            <h3>프로젝트명</h3>
+            <ul>
+              <li><span>주요 기능 : </span>주요기능설명</li>
+              <li>
+                <span>적용 기술 : </span>HTML, CSS, JS, React, Java, Spring Boot
+              </li>
+              <li><span>Github : </span>깃허브 주소</li>
+              <li><span>URL : </span>배포 주소</li>
+            </ul>
+            <div class="btn-group">
+              <a
+                href="javascript:void(0)"
+                target="_blank"
+                class="btn btn--brown"
+                >README</a
+              >
+              <a href="javascript:void(0)" class="btn btn--brown btn-modal">모달</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="port">
+          <div class="port__img">
+            <img src="images/work_2.jpg" alt="포트폴리오2" />
+          </div>
+          <div class="port__text">
+            <h3>프로젝트명</h3>
+            <ul>
+              <li><span>주요 기능 : </span>주요기능설명</li>
+              <li>
+                <span>적용 기술 : </span>HTML, CSS, JS, React, Java, Spring Boot
+              </li>
+              <li><span>Github : </span>깃허브 주소</li>
+              <li><span>URL : </span>배포 주소</li>
+            </ul>
+            <div class="btn-group">
+              <a
+                href="javascript:void(0)"
+                target="_blank"
+                class="btn btn--brown"
+                >README</a
+              >
+              <a href="javascript:void(0)" class="btn btn--brown btn-modal">모달</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- MODAL -->
+    <div id="modal">
+      <div class="modal__inner">
+        <img src="images/work_4.jpg" alt="모달" />
+        <span class="material-symbols-outlined btn-close">close</span>
+      </div>
+    </div>
+
+    <!-- ScrollMagic -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
