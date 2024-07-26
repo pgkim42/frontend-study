@@ -16,10 +16,6 @@ let modalEl = document.querySelector('#modal');
 let modalBtn = document.querySelectorAll('.port .btn-modal');
 let closeBtn = document.querySelector('#modal .btn-close');
 
-console.log(modalBtn);
-console.log(modalBtn[0]);
-console.log(modalBtn[1]);
-
 modalBtn[0].addEventListener('click', function() {
   modalEl.style.display = 'flex';
 });
@@ -30,5 +26,38 @@ modalBtn[1].addEventListener('click', function() {
 
 closeBtn.addEventListener('click', function() {
   modalEl.style.display = 'none';
-})
+});
+
+// 현재 연도 표시
+// 날짜 정보를 가진 JS의 Date 객체를 활용
+new Date().getFullYear(); // 현재 연도 정보가 숫자 데이터로 반환됨
+console.log('new Date().getFullYear(): ', new Date().getFullYear());
+
+let thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
+
+// 페이지 최상단으로 이동
+let toTopBtn = document.querySelector('#to-top');
+
+// 페이지에 스크롤 이벤트 감지를 추가
+// window: 브라우저 창 객체
+window.addEventListener('scroll', function () {
+  console.log(window.scrollY);
+
+  // 페이지 스크롤 위치가
+  // 500px을 넘으면 요소를 보이고,
+  // 500px을 넘지 않으면 요소 숨기기.
+  if (this.window.scrollY >= 500) {
+  // toTopBtn.style.display = 'flex';    
+  // 애니메이션 처리를 하고 싶다면
+  toTopBtn.style.opacity = 1;
+  toTopBtn.style.transform = 'translateX(0)';
+  
+  } else {
+    // toTopBtn.style.display = 'none';
+    toTopBtn.style.opacity = 0;
+    toTopBtn.style.transform = 'translateX(100px)';
+  }
+});
+
 
