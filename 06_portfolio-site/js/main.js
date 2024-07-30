@@ -11,6 +11,7 @@ spyEls.forEach(function(spyEl) {
   .addTo(new ScrollMagic.Controller());
 });
 
+
 // 모달창 띄우기
 let modalEl = document.querySelector('#modal');
 let modalBtn = document.querySelectorAll('.port .btn-modal');

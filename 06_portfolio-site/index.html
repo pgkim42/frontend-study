@@ -9,7 +9,7 @@
 
     <!-- 
     (참고) 파비콘 만들기: https://iconifier.net/
-     -->
+    -->
     <link rel="icon" href="./favicon.ico" />
 
     <!-- reset.css -->
@@ -17,6 +17,12 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
+
+    <!-- animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
     <!-- 구글 머터리얼 아이콘 -->
@@ -32,16 +38,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- 폰트 테스트
-     <span>헬로 월드!</span>
-     <span class="font-en">Hello world!</span> -->
-
     <!-- HEADER -->
     <header>
       <div class="inner">
@@ -54,50 +57,95 @@
         <nav class="font-en">
           <ul>
             <a href="#about"><li>ABOUT</li></a>
+            <a href="#interest"><li>INTEREST</li></a>
             <a href="#skill"><li>SKILL</li></a>
-            <li><a href="#work">WORK</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <a href="#work"><li>WORK</li></a>
+            <a href="#contact"><li>CONTACT</li></a>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- VISUAL -->
-    <!-- 배경 비디오 적용() -->
-    <section class="visual">
-      <video autoplay muted loop>
-        <source src="videos/movie2.mp4" type="video/mp4" />
-      </video>
+    <!-- MAIN -->
+    <section id="main" class="main">
+      <div class="inner">
+        <h2 class="title font-en animate__animated animate__bounce">
+          BackEnd Developer, FrontEnd Developer
+        </h2>
+        <div class="main__wrapper">
+          <span class="font-main-introduce"
+            >I design and code beautifully simple things, and I love what I
+            do.</span
+          >
+          <img src="../06_portfolio-site/images/hero-devices.svg" />
+        </div>
+      </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="about">
+    <section id="about" class="about scroll-spy2">
       <div class="inner">
         <h2 class="title font-en">ABOUT</h2>
         <div class="about__wrapper">
           <div class="about__img">
-            <!-- 본인 프로필 이미지로 변경 -->
-            <img src="images/profile.jpg" alt="프로필" />
+            <img src="images/profile.svg" alt="프로필" />
           </div>
           <div class="about__text">
-            <!-- 본인 슬로건, 이름, 등등 작성 -->
-            <strong class="slogan font-en">hello</strong>
-            <h3 class="font-en">name</h3>
+            <strong class="slogan font-en">Kim Pyeonggi</strong>
+            <h3 class="font-en">Full-Stack Developer</h3>
             <div>
               <h4 class="font-en">EDUCATION</h4>
               <ul>
-                <li>99.99 ~ 99.99 AAAAA</li>
-                <li>00.00 ~ 00.00 BBBBB</li>
+                <li>2010. 03 ~ 2016. 02 Computer & Information Science</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <!-- 연락처 버튼 -->
         <div class="about__btn font-en">
           <a href="#contact">
             <img src="images/icon/icon_contact.png" alw="전화" />CONTACT
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTEREST -->
+    <section id="interest" class="interest">
+      <div class="inner">
+        <h2 class="title font-en">INTEREST</h2>
+        <div class="title__wrapper">
+          <div class="title__item1">
+            <img src="./images/pl.svg" alt="PL" />
+            <span class="font-interest-item">Programming Language</span>
+            <div class="interest__list">
+              <ul class="font-interest-text">
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>Kotlin</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="title__item2">
+            <img src="./images/CS.svg" alt="CS" />
+            <span class="font-interest-item">Computer Sceince</span>
+            <div class="interest__list">
+              <ul class="font-interest-text">
+                <li>Data Structure</li>
+                <li>Algorithm</li>
+                <li>Computer Architecture</li>
+                <li>Operation System</li>
+                <li>Network Programming</li>
+                <li>Compiler</li>
+                <li>Machine Learning</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -110,62 +158,70 @@
           <!-- 스킬 추가하려면 li 요소 복사 붙여넣기 -->
           <li>
             <div class="font-en">
-              <p>Java</p>
+              <p>BackEnd</p>
             </div>
-            <h3 class="font-en">Java<br />Programming</h3>
+            <!-- <h3 class="font-en">Java<br />Programming</h3> -->
             <ul>
-              <li>객체지향</li>
-              <li>람다식</li>
-              <li>파일 입출력</li>
-              <li>JDBC</li>
+              <li>
+                <img src="./images/skill_icon/Java-Light.svg" alt="Java" />
+              </li>
+              <li>
+                <img src="./images/skill_icon/Spring-Light.svg" alt="Spring" />
+              </li>
+              <li>
+                <img
+                  src="./images/skill_icon/SpringBoot.png"
+                  alt="SpringBoot"
+                />
+              </li>
+              <li>
+                <img src="./images/skill_icon/MySQL-Light.svg" alt="MySQL" />
+              </li>
             </ul>
           </li>
 
           <li>
             <div class="font-en">
-              <p>Html</p>
+              <p>FrontEnd</p>
             </div>
-            <h3 class="font-en">HTML5</h3>
             <ul>
-              <li>웹페이지 구조 설계</li>
-              <li>파일 입출력</li>
+              <li><img src="./images/skill_icon/HTML.svg" alt="HTML" /></li>
+              <li><img src="./images/skill_icon/CSS.svg" alt="CSS" /></li>
+              <li>
+                <img
+                  src="./images/skill_icon/JavaScript.svg"
+                  alt="JavaScript"
+                />
+              </li>
+              <li>
+                <img src="./images/skill_icon/Bootstrap.svg" alt="Bootsrap" />
+              </li>
             </ul>
           </li>
 
           <li>
             <div class="font-en">
-              <p>Css</p>
+              <p>Tool</p>
             </div>
-            <h3 class="font-en">CSS3</h3>
             <ul>
-              <li>객체지향</li>
-              <li>람다식</li>
-              <li>파일 입출력</li>
-              <li>JDBC</li>
-            </ul>
-          </li>
-
-          <li>
-            <div class="font-en">
-              <p>Spring</p>
-            </div>
-            <h3 class="font-en">Spring Framework</h3>
-            <ul>
-              <li>Spring Framework</li>
-              <li>SpringBoot</li>
-              <li>Spring Security</li>
-            </ul>
-          </li>
-
-          <li>
-            <div class="font-en">
-              <p>Js</p>
-            </div>
-            <h3 class="font-en">JavaScript</h3>
-            <ul>
-              <li>DOM 조작, 제어</li>
-              <li>이벤트 처리</li>
-              <li>비동기 통신</li>
+              <li>
+                <img src="./images/skill_icon/Idea-Light.svg" alt="IDEA" />
+              </li>
+              <li>
+                <img
+                  src="./images/skill_icon/Eclipse-Light.svg"
+                  alt="Eclipse"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/skill_icon/VisualStudio-Light.svg"
+                  alt="VS"
+                />
+              </li>
+              <li>
+                <img src="./images/skill_icon/VSCode-Light.svg" alt="VSCode" />
+              </li>
             </ul>
           </li>
         </ul>
@@ -181,14 +237,14 @@
             <img src="images/work_1.jpg" alt="포트폴리오1" />
           </div>
           <div class="port__text">
-            <h3>프로젝트명</h3>
+            <h3>더미프로젝트 #1</h3>
             <ul>
-              <li><span>주요 기능 : </span>주요기능설명</li>
+              <li><span>주요 기능 : </span>CRUD</li>
               <li>
                 <span>적용 기술 : </span>HTML, CSS, JS, React, Java, Spring Boot
               </li>
-              <li><span>Github : </span>깃허브 주소</li>
-              <li><span>URL : </span>배포 주소</li>
+              <li><span>Github : </span>-</li>
+              <li><span>URL : </span>-</li>
             </ul>
             <div class="btn-group">
               <a
@@ -209,14 +265,14 @@
             <img src="images/work_2.jpg" alt="포트폴리오2" />
           </div>
           <div class="port__text">
-            <h3>프로젝트명</h3>
+            <h3>더미프로젝트 #2</h3>
             <ul>
-              <li><span>주요 기능 : </span>주요기능설명</li>
+              <li><span>주요 기능 : </span>CRUD</li>
               <li>
                 <span>적용 기술 : </span>HTML, CSS, JS, React, Java, Spring Boot
               </li>
-              <li><span>Github : </span>깃허브 주소</li>
-              <li><span>URL : </span>배포 주소</li>
+              <li><span>Github : </span>-</li>
+              <li><span>URL : </span>-</li>
             </ul>
             <div class="btn-group">
               <a
@@ -225,8 +281,8 @@
                 class="btn btn--brown"
                 >README</a
               >
-              <a href="javascript:void(0)" class="btn btn--brown btn-modal"
-                >모달</a
+              <a href="javascript:void(0)"
+                ><button class="btn btn--brown btn-modal">모달</button></a
               >
             </div>
           </div>
@@ -258,15 +314,7 @@
                 href="https://github.com/pgkim42/frontend-study"
                 target="_blank"
               >
-                <img src="images/icon/icon_insta.png" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/pgkim42/frontend-study"
-                target="_blank"
-              >
-                <img src="images/icon/icon_youtube.png" />
+                <img src="images/icon/github.png" />
               </a>
             </li>
           </ul>
@@ -278,7 +326,7 @@
     <footer>
       <div class="inner">
         <p class="copyright">
-          &copy; <span class="this-year"></span> 이름.
+          &copy; <span class="this-year"></span> Kim Pyeonggi.
           <span class="font-en">All Rights Reserved.</span>
         </p>
       </div>
