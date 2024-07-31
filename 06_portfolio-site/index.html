@@ -3,13 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="개발자 포트폴리오" />
     <title>포트폴리오</title>
-    <!-- 파비콘 적용 -->
-    <!-- 파비콘(favicon.ico)은 프로젝트 폴더의 최상위(Root) 경로에 포함시키면 자동 적용 -->
-
-    <!-- 
-    (참고) 파비콘 만들기: https://iconifier.net/
-    -->
     <link rel="icon" href="./favicon.ico" />
 
     <!-- reset.css -->
@@ -18,13 +13,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
     />
-
-    <!-- animate.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
     <!-- 구글 머터리얼 아이콘 -->
     <!-- 구글에서 제공하는 머터리얼 스타일 아이콘, 글자처럼 취급 가능한 장점 -->
     <link
@@ -56,11 +44,11 @@
         <!-- 메뉴 -->
         <nav class="font-en">
           <ul>
-            <a href="#about"><li>ABOUT</li></a>
-            <a href="#interest"><li>INTEREST</li></a>
-            <a href="#skill"><li>SKILL</li></a>
-            <a href="#work"><li>WORK</li></a>
-            <a href="#contact"><li>CONTACT</li></a>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#interest">INTEREST</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -69,21 +57,26 @@
     <!-- MAIN -->
     <section id="main" class="main">
       <div class="inner">
-        <h2 class="title font-en animate__animated animate__bounce">
+        <h2 class="title font-en text-focus-in">
           BackEnd Developer, FrontEnd Developer
         </h2>
         <div class="main__wrapper">
-          <span class="font-main-introduce"
-            >I design and code beautifully simple things, and I love what I
-            do.</span
-          >
-          <img src="../06_portfolio-site/images/hero-devices.svg" />
+          <div class="main__text">
+            <span class="font-main-introduce"
+              >I design and code beautifully simple things, and I love what I
+              do.</span
+            >
+          </div>
+          <img
+            src="../06_portfolio-site/images/hero-devices.svg"
+            alt="main_photo"
+          />
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="about scroll-spy2">
+    <section id="about" class="about scroll-spy">
       <div class="inner">
         <h2 class="title font-en">ABOUT</h2>
         <div class="about__wrapper">
@@ -104,14 +97,14 @@
 
         <div class="about__btn font-en">
           <a href="#contact">
-            <img src="images/icon/icon_contact.png" alw="전화" />CONTACT
+            <img src="images/icon/icon_contact.png" alt="전화" />CONTACT
           </a>
         </div>
       </div>
     </section>
 
     <!-- INTEREST -->
-    <section id="interest" class="interest">
+    <section id="interest" class="interest scroll-spy">
       <div class="inner">
         <h2 class="title font-en">INTEREST</h2>
         <div class="title__wrapper">
@@ -146,6 +139,22 @@
               </ul>
             </div>
           </div>
+
+          <div class="title__item3">
+            <img src="./images/web.png" alt="WEB" />
+            <span class="font-interest-item">Web Development</span>
+            <div class="interest__list">
+              <ul class="font-interest-text">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+                <li>Spring Framework</li>
+                <li>SpringBoot</li>
+                <li>BootStrap</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -160,7 +169,6 @@
             <div class="font-en">
               <p>BackEnd</p>
             </div>
-            <!-- <h3 class="font-en">Java<br />Programming</h3> -->
             <ul>
               <li>
                 <img src="./images/skill_icon/Java-Light.svg" alt="Java" />
@@ -234,7 +242,7 @@
         <h2 class="title">WORK</h2>
         <div class="port">
           <div class="port__img">
-            <img src="images/work_1.jpg" alt="포트폴리오1" />
+            <img src="images/project_icon1.png" alt="포트폴리오1" />
           </div>
           <div class="port__text">
             <h3>더미프로젝트 #1</h3>
@@ -262,7 +270,7 @@
 
         <div class="port">
           <div class="port__img">
-            <img src="images/work_2.jpg" alt="포트폴리오2" />
+            <img src="images/project_icon2.png" alt="포트폴리오2" />
           </div>
           <div class="port__text">
             <h3>더미프로젝트 #2</h3>
@@ -281,8 +289,8 @@
                 class="btn btn--brown"
                 >README</a
               >
-              <a href="javascript:void(0)"
-                ><button class="btn btn--brown btn-modal">모달</button></a
+              <a href="javascript:void(0)" class="btn btn--brown btn-modal"
+                >모달</a
               >
             </div>
           </div>
@@ -314,7 +322,7 @@
                 href="https://github.com/pgkim42/frontend-study"
                 target="_blank"
               >
-                <img src="images/icon/github.png" />
+                <img src="images/icon/github.png" alt="github" />
               </a>
             </li>
           </ul>
@@ -354,7 +362,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

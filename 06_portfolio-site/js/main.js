@@ -4,7 +4,7 @@ let spyEls = document.querySelectorAll('section.scroll-spy');
 spyEls.forEach(function(spyEl) {
   new ScrollMagic.Scene ({ // 감시할 장면 추가 및 옵션 지정
     triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
-    triggerHook: 0.5 // 화면의 50% 지점에서 보여짐 
+    triggerHook: 0.15 // 화면의 15% 지점에서 보여짐 
   })
 
   .setClassToggle(spyEl, 'show')
@@ -60,5 +60,3 @@ window.addEventListener('scroll', function () {
     toTopBtn.style.transform = 'translateX(100px)';
   }
 });
-
-
