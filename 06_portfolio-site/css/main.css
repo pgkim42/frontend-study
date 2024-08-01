@@ -1,28 +1,28 @@
 /* 크롬, 사파리, 엣지, 오페라에서 스크롤바 스타일링 */
 ::-webkit-scrollbar {
-  width: 12px; /* 스크롤바의 너비 */
+  width: 12px; 
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(239, 226, 226, 0.815); /* 스크롤바 트랙의 배경색 */
-  border-radius: 8px; /* 스크롤바 트랙의 둥근 모서리 */
+  background: rgba(239, 226, 226, 0.815); 
+  border-radius: 8px; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #141c3a; /* 스크롤바 슬라이더 색상 */
-  border-radius: 8px; /* 스크롤바 슬라이더의 둥근 모서리 */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 스크롤바 슬라이더에 그림자 추가 */
+  background: #141c3a;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0f1730; /* 마우스 오버 시 스크롤바 슬라이더 색상 변경 (조금 더 어두운 색상) */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* 마우스 오버 시 그림자 강도 증가 */
+  background: #0f1730; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
 /* Firefox에서 스크롤바 스타일링 */
 * {
-  scrollbar-width: thin; /* 스크롤바 너비를 얇게 설정 */
-  scrollbar-color: #141c3a rgba(239, 226, 226, 0.815); /* 스크롤바 슬라이더와 배경색 */
+  scrollbar-width: thin; 
+  scrollbar-color: #141c3a rgba(239, 226, 226, 0.815); 
 }
 
 /* COMMON */
@@ -234,6 +234,7 @@ header nav ul li a:hover {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
+  text-align: start;
 }
 
 @keyframes typing {
